@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Coming+Soon&display=swap');
+
+:root {
+    --celeste: #1ecbe9;
+    --magenta: #e91e63;
+    --fondo: #141414;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--fondo);
+    font-family: 'Coming Soon', cursive;
+}
+
+.contenedor {
+    width: 90%;
+    margin:auto;
+}
+
+.titulo {
+    font-weight: 900;
+    font-family: 'Bebas Neue', cursive;
+    color: var(--celeste);
+    font-size: 3.12em;
+    margin-bottom: 0.4em;
+     justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* Header Section */
+header{
+    padding: 30px 0;
+    
+}
+header .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
+    color: var(--celeste);
+    font-size: 40px;
+}
+
+header nav a {
+    color: var(--magenta);
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+header nav a:hover, 
+header nav a.activo {
+    color: var(--celeste)
+}
+
+/* Seccion 1 "quien soy" */
+
+.quiensoy{
+    font-size: 16px;
+    min-height: 40.62em;
+    color:floralwhite;
+    background: linear-gradient(rgba(0, 0, 10, .50) 0%, rgba(0, 0, 10, .50) 100%), url(../imagenes/fondocab5.jpg);
+    background-position: center center;
+    background-size: cover ;
+    margin-bottom: 3.12em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.quiensoy .titulo {
+    font-weight: 900;
+    font-size: 3.12em;
+    margin-bottom: 0.4em;
+}
+.quiensoy .presentacion {
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.75em;
+    margin-bottom: 1.25em;
+
+}
+
+.quiensoy .boton {
+    background: rgba(0, 0, 10, .50);
+    border: none;
+    border-radius: 0.31em;
+    padding: 0.93em 1.87em;
+    color: var(--magenta);
+    margin-right: 1.25em;
+    cursor: pointer;
+    transition: 0.3s ease all;
+    font-size: 1.12em;
+}
+
+.quiensoy .boton:hover {
+    background:rgba(233, 30, 99, .30);
+    color: var(--celeste);
+}
+
+
+/* seccion servicios */
+
+.containers{
+    position: relative;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: minmax(100px, auto);
+    margin: 40px;
+    grid-auto-flow: dense;
+    grid-gap: 10px;
+}
+.containers .box{
+    background: #000;
+    border: 2px solid #1ecbe9;
+    padding: 30px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    color: #fff;
+    transition: 0.5s;
+}
+.containers .box h3{
+    font-size: 20px;
+    padding: 10px;
+}
+.containers .box p{
+    font-size: 15px;
+    padding: 10px;
+}
+.containers .box:hover{
+    background: #e91e63;
+    border-color: #1ecbe9;
+}
+.containers .box img{
+    position: relative;
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+.containers .box:nth-child(1){
+    grid-column: span 2;
+    grid-row: span 1;
+}
+.containers .box:nth-child(2){
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.containers .box:nth-child(4){
+    grid-column: span 1;
+    grid-row: span 1;
+}
+.containers .box:nth-child(5){
+    grid-column: span 4;
+    grid-row: span 1;
+}
+
+/* seccion testimonios */
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+    border: 2px solid var(--magenta);
+    border-radius: 10px;
+}
+.col-3:hover{
+    background-color: var(--celeste);
+    transition: 0.5s;
+    border-color: var(--magenta);
+}
+.col-3 img{
+    width: 100%;
+}
+
+.contenedor .col-3{
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s;
+}
+.contenedor .col-3 img{
+    width: 80px;
+    margin-top: 20px;
+    border-radius: 80%;
+}
+.contenedor .col-3:hover{
+    transform: translateY(-10px);
+}
+i{
+    color: #fff;
+    padding: 10px;
+}
+.col-3 p{
+    font-size: 12px;
+    margin: 12px 0;
+    color: #fff;
+}
+.contenedor .col-3 h3{
+    font-size: 16px;
+    color: #fff;
+    font-weight: 900;
+}
+
+  /* Footer Section */
+.footer{
+    background-color: var(--celeste);
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 0;
+    
+    
+}
+.footer:hover{
+    color: var(--magenta);
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style: none;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4{
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    background-color: black;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 300;
+    color:#fff;
+    display: block;
+    transition: all 0.3s ease;
+
+}
+
+.footer-col ul li a:hover{
+    color: black;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover{
+   background-color: rgb(233, 30, 99);
+}
+
+.copyright{
+    text-align: center;
+    font-weight: 700;
+    padding-top: 10px;
+}
+
+/* estilos imagenes portafolio */
+
+.contenedor_galeria{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 400px;
+    padding: 20px;
+    grid-gap:10px;
+}
+.item_imagen{
+    position: relative;
+}
+
+.galeria_imagen{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.titulo_galeria{
+    position: absolute;
+    bottom: 0;
+    color:white;
+    background:linear-gradient(rgba(255,255,255,0),rgba(233,30,99,1));
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+
+}
+
+.item_imagen:nth-child(4) {
+    grid-row-start: span 2;
+}
+.item_imagen:nth-child(6) {
+    grid-column-start: span 2;
+}
+
+/* estilos pagina presupuesto */
+
+.presupuesto {
+    font-size: 16px;
+    min-height: 40.62em;
+    color:floralwhite;
+    background: linear-gradient(rgba(0, 0, 10, .50) 0%, rgba(0, 0, 10, .50) 100%), url(../imagenes/img1.jpg);
+    background-position: center center;
+    background-size: cover ;
+    margin-bottom: 3.12em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+form {
+    width: 650px;
+    margin: auto;
+    background: rgba(233, 30, 98, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 0px;
+    border-radius: 7px;
+}
+
+.grupo_datos{
+    border:none
+}
+
+.datos {
+    border-radius: 10px;
+    padding: 10px;
+    border-color: var(--celeste);
+}
+
+.datos input {
+    margin-bottom: 20px;
+    padding: 7px;
+}
+
+textarea {
+    min-height: 300px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+.caja_enviar {
+    padding-top: 10px;
+}
+
+.caja_enviar .boton {
+    background: rgba(0, 0, 10, .50);
+    border: none;
+    border-radius: 0.31em;
+    padding: 0.93em 1.87em;
+    color: var(--magenta);
+    margin-right: 1.25em;
+    cursor: pointer;
+    transition: 0.3s ease all;
+    font-size: 1.12em;
+}
+
+.caja_enviar .boton:hover {
+    background:rgba(233, 30, 99, .30);
+    color: var(--celeste);
+}
+
+/*estilos pagina contacto */
+
+.conte_contacto{
+    width: 100%;
+    margin:auto;
+    font-size: 14px;
+    min-height: 40.62em;
+    color:floralwhite; 
+    background-position: center center;
+    background-size: cover ;
+    margin-bottom: 3.12em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.galeria_mapa{
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+}
+
+/*estilos pagina aviso legal */
+
+.entry-content{
+    width: 90%;
+    margin:auto;
+    font-size: 16px;
+    min-height: 40.62em;
+    color:floralwhite; 
+    background-position: center center;
+    background-size: cover ;
+    margin-bottom: 3.12em;
+    justify-content: center;
+    align-items: center;
+    text-align:justify;
+    
+}
+
+.entry-content ul{
+    list-style:circle;
+    
+}
+
+
+
+

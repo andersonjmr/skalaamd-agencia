@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Página de practicas masterD" />
+    <meta name="robots" content="NOFOLLOW" />
+    <meta name="Author" content="Anderson" />
+    <meta name="lang" content="es" />
+    <meta name="revisit-after" content="2 days" />
+    <meta name="category" content="TRABAJO FINAL: HTML/CSS" />
+
+    <title>Presupuesto</title>
+
+    <!-- Declaracion de fichero de estilos-->
+    <link rel="stylesheet" type="text/css" href="../CSS/estilos.css">
+
+    <!-- Declaracion de fichero de fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Coming+Soon&display=swap" rel="stylesheet">
+
+    <!-- Declaracion de fichero de iconos sociales-->
+    <link rel="stylesheet" type="text/css" href="../CSS/fonts.css">
+   
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="contenedor">
+            <h2 class="logo">SKALA AMD</h2>
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="../views/portafolio.html">Portafolio</a>
+                <a href="#" class="activo">Presupuesto</a>
+                <a href="../views/contacto.html">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="contenedor">
+        <h1 class="titulo">solicitud de presupuesto</h1>
+    </div>
+
+    <!-- formulario presupuesto-->
+
+    <div class="presupuesto">
+        <form class="form" id=formulario name="formulario" method="post" action="">
+            <fieldset class="grupo_datos">
+                <fieldset class="datos">
+                    <label for="nombre">Nombre:</label><input type="text" id="nombre" name="nombre" size="55"
+                        maxlength="100" required placeholder="escriba su nombre" /> <br />
+                    <label for="apellidos">Apellidos:</label><input type="text" id="apellidos" name="apellidos"
+                        size="54" maxlength="50" required placeholder="escriba sus apellidos" /><br />
+                    <label for="telefono">Telefono:</label><input type="tel" id="telefono" name="telefono" size="55"
+                        maxlength="9" required placeholder="escribir un nuemro de telefono valido" pattern="[0-9]{9}" /><br />
+                    <label for="email">Email:</label><input type="email" id="email" name="email" size="58"
+                        maxlength="50" required placeholder="escribir un email valido" />
+                    <br />
+                </fieldset>
+                <br />
+               
+                <fieldset class="datos">
+                    Favor indicar las especificaciones que requiere el proyecto<br />
+                    <textarea id="masinfo" name="masinfo" id="masinfo" rows="14" cols="50"></textarea><br />
+                    <input type="checkbox" name="politica1" id="politica" value="si" class="webtipo" required /> Acepto las
+                    politicas de privacidad
+                </fieldset>
+
+                <div class="caja_enviar">
+                    <input type="submit" name="enviar" id="enviar" class="boton" value="Enviar Datos" />
+                    <input type="reset" name="reset" id="reset" class="boton" value="Limpiar" />
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <div class="contenedor">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>CONTACTOS</h4>
+                    <ul>
+                        <li><a href="../views/contacto.html">+34 651548115</a></li>
+                        <li><a href="../views/contacto.html">andesonjmr@skalaamd.com</a></li>
+                        <li><a href="../views/contacto.html">C/ rio salado 1 28018 madrid</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>ENLACES RAPIDOS</h4>
+                    <ul>
+                        <li><a href="../views/portafolio.html">Portafolio</a></li>
+                        <li><a href="../views/presupuesto.html">Presupuesto</a></li>
+                        <li><a href="../views/contacto.html">Contacto</a></li>
+                        <li><a href="../views/aviso_legal.html">Aviso legal</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/" class="icon icon-facebook" target="blank"></a>
+                        <a href="https://www.instagram.com/" class="icon-instagram" target="blank"></a>
+                        <a href="https://twitter.com/" class="icon icon-twitter" target="blank"></a>
+                        <a href="https://www.linkedin.com/" class="icon icon-linkedin2" target="blank"></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright &copy; 2021 | Created by Anderson Murillo</p>
+        </div>
+    </div>
+</body>
+
+</html>

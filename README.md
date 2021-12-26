@@ -5,3 +5,7 @@ En este proyecto se utilizaron los lenguajes
 •	HTML
 •	CSS
 Lo que se quiso desarrollar en este proyecto fue una web para una futura agencia de diseño web.
+
+si quieres ver la web alojada, puedes verla en el siguiente link
+
+https://ajmrdesigns-skalaamd.netlify.app/
